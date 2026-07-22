@@ -1,4 +1,5 @@
-const { default: makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys')
+const PORT = process.env.PORT || 3000
+    const { default: makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys')
 
 async function startBot() {
     const { state, saveCreds } = await useMultiFileAuthState('session')
